@@ -1,0 +1,39 @@
+@import "palette";
+
+// wow animate
+
+.animate__slideInUp{
+    // animation-delay: 0.5s;
+}
+.animate__fadeIn{
+    // animation-delay: 0.5s;
+}
+
+
+// CSS animation
+
+@keyframes appear_90{
+    from{ width: 0%; background-color: $textcolor; font-size: 0rem; }
+    to{ width: 90%; background-color:$thcolor2; font-size: 1rem; }
+}
+@keyframes appear_60{
+    from{ width: 0%; background-color: $textcolor; font-size: 0rem; }
+    to{ width: 60%; background-color:$thcolor2_light; font-size: 1rem; }
+}
+@keyframes appear_30{
+    from{ width: 0%; background-color: $textcolor; font-size: 0rem;}
+    to{ width: 30%; background-color:$thcolor1_light; font-size: 1rem;}
+}
+
+.animation_appear_90{
+    animation: appear_90 2s ease-out 3s;
+    animation-fill-mode: forwards;
+}
+.animation_appear_60{
+    animation: appear_60 2s ease-out 4s;
+    animation-fill-mode: forwards;
+}
+.animation_appear_30{
+    animation: appear_30 2s ease-out 5s;
+    animation-fill-mode: forwards;
+}

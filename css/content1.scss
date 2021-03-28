@@ -1,0 +1,80 @@
+@import "palette";
+
+
+#main{
+    position: relative;
+    top: 50vw;
+    left: 0;
+
+   // personal infomation ********************************
+   #content1 {
+    width: 100%;
+    min-height: 70vh;
+    text-align: center;
+    background-color: #f8f6f4;
+    padding: 5rem 0;
+    
+    .c1_title{
+        margin: auto;
+            width: 6rem;
+            height: 2rem;
+            line-height: 2rem;
+            color: $textcolor;
+            letter-spacing: 2px;
+            border-radius: 30px 30px;
+            background-color: $thcolor2_light;
+        }
+
+        .flex_row {
+            align-items: center;
+            justify-content: center;
+
+            // margin-top: 2rem;
+
+            .left {
+                img {
+                    height: 50vw;
+                    max-height: 40vh;
+                    margin-top: 3rem;
+                }
+            }
+            .right {
+                margin-left: 6rem;
+                .name {
+                    font-size: 1.7rem;
+                    font-weight: 700;
+                    letter-spacing: 3px;
+                    padding-bottom: 1.7rem;
+                    color: $thcolor2;
+                    border-bottom: 1px solid $thcolor2_mid;
+                }
+
+                table {
+                    text-align: left;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                    color: $thcolor2_mid;
+                    margin-top: 5rem;
+                    tr {
+                        height: 2.2em;
+                        td {
+                            padding-right: 3rem;
+                        }
+                    }
+                }
+
+                .traits {
+                    margin: auto;
+                    padding: 0.5rem;
+                    font-weight: 500;
+                    margin-top: 2rem;
+                    border-radius: 5px 5px;
+                    background-color: $thcolor2_light;
+                    color: $textcolor;
+                    box-shadow: 2px 2px 3px $thcolor2_mid;
+                }
+            }
+        }
+    }
+}

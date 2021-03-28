@@ -1,0 +1,38 @@
+@import "palette";
+
+#main {
+    position: relative;
+    top: 100vh;
+    left: 0;
+
+    // side navbar ********************************
+    #side_navbar {
+        position: fixed;
+        top: 30vh;
+        left: 0;
+        z-index: 50;
+        text-align: center;
+        letter-spacing: 2px;
+        display: none;
+
+        p {
+            width: 6rem;
+            margin: 0.8rem 0;
+            padding: 0.5rem 0.5rem 0.5rem 0;
+            background-color: $thcolor1_light;
+            border-radius: 0 10px 10px 0;
+
+            &:hover {
+                background-color: $thcolor1;
+                padding-left: 1.5rem;
+            }
+
+            a {
+                color: $textcolor;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+

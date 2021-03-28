@@ -1,0 +1,108 @@
+// wow animate
+
+.animate__slideInUp{
+    // animation-delay: 0.5s;
+}
+.animate__fadeIn{
+    // animation-delay: 0.5s;
+}
+
+@-webkit-keyframes appear_90 {
+  from {
+    width: 0%;
+    background-color: #fff;
+    font-size: 0rem;
+  }
+  to {
+    width: 90%;
+    background-color: #584636;
+    font-size: 1rem;
+  }
+}
+
+@keyframes appear_90 {
+  from {
+    width: 0%;
+    background-color: #fff;
+    font-size: 0rem;
+  }
+  to {
+    width: 90%;
+    background-color: #584636;
+    font-size: 1rem;
+  }
+}
+
+@-webkit-keyframes appear_60 {
+  from {
+    width: 0%;
+    background-color: #fff;
+    font-size: 0rem;
+  }
+  to {
+    width: 60%;
+    background-color: #d8c5b5;
+    font-size: 1rem;
+  }
+}
+
+@keyframes appear_60 {
+  from {
+    width: 0%;
+    background-color: #fff;
+    font-size: 0rem;
+  }
+  to {
+    width: 60%;
+    background-color: #d8c5b5;
+    font-size: 1rem;
+  }
+}
+
+@-webkit-keyframes appear_30 {
+  from {
+    width: 0%;
+    background-color: #fff;
+    font-size: 0rem;
+  }
+  to {
+    width: 30%;
+    background-color: #85b6ae;
+    font-size: 1rem;
+  }
+}
+
+@keyframes appear_30 {
+  from {
+    width: 0%;
+    background-color: #fff;
+    font-size: 0rem;
+  }
+  to {
+    width: 30%;
+    background-color: #85b6ae;
+    font-size: 1rem;
+  }
+}
+
+.animation_appear_90 {
+  -webkit-animation: appear_90 2s ease-out 3s;
+          animation: appear_90 2s ease-out 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.animation_appear_60 {
+  -webkit-animation: appear_60 2s ease-out 4s;
+          animation: appear_60 2s ease-out 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.animation_appear_30 {
+  -webkit-animation: appear_30 2s ease-out 5s;
+          animation: appear_30 2s ease-out 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+/*# sourceMappingURL=animation.css.map */

@@ -1,0 +1,111 @@
+@import "palette";
+
+// skill and license ********************************
+
+#content2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 80vh;
+    border: 2px solid $thcolor2_light;
+
+    .left {
+        width: 50%;
+        min-height: 100%;
+
+        .c2_title {
+            margin: 2rem auto;
+            text-align: center;
+            width: 6rem;
+            height: 2rem;
+            line-height: 2rem;
+            color: $textcolor;
+            letter-spacing: 2px;
+            border-radius: 30px 30px;
+            background-color: $thcolor2_light;
+        }
+
+        .flex_row {
+            width: 80%;
+            margin: auto;
+            margin-bottom: 2rem;
+
+            .skill {
+                display: flex;
+                flex: 1 1 100%;
+                justify-content: center;
+                text-align: left;
+                font-size: 1rem;
+                color: $textcolor2;
+                margin: 0.5rem auto;
+
+                p {
+                    width: 25%;
+                }
+
+                .skill_bar_bg {
+                    background-color: $textcolor;
+                    width: 20%;
+                    min-width: 12rem;
+                    height: 2.5rem;
+                    border: 1px solid #999;
+                    border-radius: 10px 10px;
+                    margin: auto 2rem;
+                    text-align: center;
+                    line-height: 2.5rem;
+                    letter-spacing: 2px;
+                }
+                .skill_bar_high {
+                    width: 90%;
+                    border-radius: 10px 0px 0px 10px;
+                    color: $textcolor;
+                }
+                .skill_bar_mid {
+                    width: 60%;
+                    border-radius: 10px 0px 0px 10px;
+                    color: $textcolor;
+                }
+                .skill_bar_low {
+                    width: 20%;
+                    border-radius: 10px 0px 0px 10px;
+                    color: $textcolor;
+                }
+            }
+        }
+    }
+    .right {
+        width: 50%;
+        min-height: 100%;
+        padding-bottom: 3rem;
+        background-color: $thcolor2_light;
+
+        .c2_title {
+            margin: 2rem auto;
+            text-align: center;
+            width: 6rem;
+            height: 2rem;
+            line-height: 2rem;
+            color: $thcolor2_light;
+            letter-spacing: 2px;
+            border-radius: 30px 30px;
+            background-color: $textcolor;
+        }
+
+        .flex_col {
+            width: 80%;
+            margin: auto;
+
+            .license {
+                background-color: $textcolor;
+                color: $thcolor2;
+                width: 18rem;
+                height: 4rem;
+                font-size: 1.2rem;
+                border-radius: 10px 10px;
+                text-align: center;
+                line-height: 4rem;
+                margin: 0.5rem auto;
+            }
+        }
+    }
+}

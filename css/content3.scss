@@ -1,0 +1,132 @@
+@import "palette";
+
+// all
+
+// Works view ******************************************
+#content3 {
+    width: 100%;
+    min-height: 80vh;
+    margin-top: 3rem;
+    
+    a {
+        text-decoration: none;
+        color: $thcolor1;
+        font-weight: 500;
+        margin: 10rem 0;
+        
+        &:active {
+            color: $thcolor1_light;
+        }
+    }
+    
+    .c3_title {
+        margin: 1rem auto;
+        text-align: center;
+        width: 9rem;
+        height: 2rem;
+        line-height: 2rem;
+        color: $textcolor;
+        letter-spacing: 2px;
+        border-radius: 30px 30px;
+        background-color: $thcolor1_light;
+    }
+    
+    .flex_row {
+        justify-content: center;
+        
+        .works {
+            position: relative;
+            flex: 1 1 33%;
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 4.5rem 2rem 4.5rem;
+            border: 2px solid $thcolor1_light;
+            background-color: #f8f6f4;
+
+            button {
+                border: none;
+                background-color: rgba($color: #fff, $alpha: 0.1);
+
+                .works_bg {
+                    position: absolute;
+                    // top: 0;
+                    // left: 0;
+                    width: 100%;
+                    height: 100%;
+
+                    &:hover {
+                        background-color: rgba($color: #eee, $alpha: 0.4);
+                    }
+                }
+            }
+            .title {
+                text-align: center;
+                margin: 1rem 0;
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: $thcolor1;
+                letter-spacing: 2px;
+            }
+            img {
+                width: 80%;
+                margin: auto;
+            }
+            p {
+                text-align: left;
+                margin: 1rem auto;
+                font-weight: 500;
+                color: $thcolor2;
+                line-height: 2rem;
+            }
+        }
+
+        .work_hide {
+            display: none;
+            position: absolute;
+            left: auto;
+            // top: 2000px;
+            width: 90vw;
+            height: 90vh;
+            background-color: #fff;
+            border-radius: 10px 10px;
+            box-shadow: 2px 5px 20px 10px #999;
+            overflow: scroll;
+            overflow-x: hidden;
+            z-index: 99;
+            text-align: center;
+
+            .clickoff {
+                text-align: center;
+                font-size: 0.8rem;
+                margin-left: -1%;
+                letter-spacing: 5px;
+                color: #999;
+                padding: 1rem 0;
+                border-top: 2px dotted #999;
+                border-bottom: 2px dotted #999;
+            }
+
+            p {
+                text-align: left;
+                margin-left: 10%;
+                color: $textcolor2;
+                font-weight: 300;
+
+                &:nth-child(2) {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: $thcolor1;
+                }
+            }
+            img {
+                margin: auto;
+                width: 80%;
+            }
+        }
+        #work4 {
+            img {
+                width: 65%;
+            }
+        }
+    }
+}

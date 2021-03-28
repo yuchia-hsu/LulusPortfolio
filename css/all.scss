@@ -1,0 +1,53 @@
+@import "palette";
+
+// base
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: "Noto Sans TC", sans-serif, 微軟正黑體, Arial, sans-serif;
+    position: relative;
+    font-size: 16px;
+
+    body {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        section{
+            margin: 0;
+            padding: 0;
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+// self
+.flex_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
+.n_display {
+    display: none;
+}
+
+// style for JS
+.noscroll {
+    position: fixed;
+    width: 100%;
+}
+.fixWindow {
+    position: absolute;
+    overflow-y: scroll;
+    height: 100%;
+}

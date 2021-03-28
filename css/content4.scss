@@ -1,0 +1,90 @@
+@import "palette";
+
+// all
+
+// Works view ******************************************
+#content4 {
+    width: 90%;
+    min-height: 80vh;
+    margin: 3rem auto;
+
+    .c4_title {
+        margin: 2rem auto;
+        text-align: center;
+        width: 9rem;
+        height: 2rem;
+        line-height: 2rem;
+        color: $textcolor;
+        letter-spacing: 2px;
+        border-radius: 30px 30px;
+        background-color: $thcolor2_light;
+    }
+
+    .flex_col {
+
+        .c4_works {
+            width: 100%;
+            // height: 20rem;
+            display: flex;
+            flex-direction: row;
+            border: 2px solid $thcolor2_light;
+            padding: 1rem 0;
+            margin: 2rem 0;
+            align-items: center;
+            justify-content: space-around;
+
+
+            .c4_img {
+                flex: 1 1 50%;
+                text-align: center;
+                margin: auto;
+                
+                img {
+                    width: 70%;
+                }
+            }
+
+            .c4_text {
+                flex: 1 1 50%;
+                margin: auto 1rem;
+                margin-left: 9vw;
+                text-align: left;
+
+                .title {
+                    margin: 1rem 0;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: $thcolor2;
+                    letter-spacing: 2px;
+                }
+                img {
+                    width: 80%;
+                    margin: auto;
+                }
+                p {
+                    margin: 1.5rem auto;
+                    font-weight: 500;
+                    color: $thcolor2_mid;
+                    line-height: 2rem;
+                }
+            }
+            .flex_col{
+                flex: 1 1 30%;
+
+                .c4_text_w30{
+                    text-align: center;
+                    margin: 1rem 0;
+
+                    p{
+                        margin: auto;
+                        font-weight: 500;
+                        color: $thcolor2_mid;
+                        line-height: 2rem;
+                    }
+
+                }
+            }
+            
+        }
+    }
+}

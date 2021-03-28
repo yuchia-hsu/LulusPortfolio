@@ -1,0 +1,351 @@
+@import "palette";
+
+// RWD 1200-790******************************************************
+@media screen and (max-width: 1200px) and (min-width: 790px) {
+    html {
+        font-size: 14px;
+
+        body {
+            #header {
+                .header_content {
+                    img {
+                        width: 60%;
+                    }
+
+                    .header_text {
+                        position: absolute;
+                        top: 1vw;
+                        width: 55%;
+
+                        .h1 {
+                            margin: 1%;
+                            margin-left: 5%;
+
+                            p {
+                                font-size: 2rem;
+
+                                span {
+                                    font-size: 3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            #main {
+                #content2 {
+                    display: flex;
+                    flex-direction: column;
+
+                    .left {
+                        width: 100%;
+
+                        .flex_row {
+                            margin-left: auto;
+                        }
+                    }
+                    .right {
+                        width: 100%;
+
+                        p {
+                            text-align: center;
+                            font-size: 3rem;
+                            margin-top: 3rem;
+                            margin-right: 0;
+                        }
+                        .flex_row {
+                            width: 68%;
+                            margin: auto;
+                        }
+                    }
+                }
+                #content3 {
+                    .flex_row {
+                        .works {
+                            flex: 1 1 100%;
+                            padding: 0.75rem;
+                            margin: 2rem 3.5rem;
+                        }
+                    }    
+                }
+            }
+        }
+    }
+}
+
+// RWD 789-401 *****************************************************
+@media screen and (max-width: 789px) {
+    html {
+        font-size: 12px;
+        body {
+            #header {
+                background-color: #fff;
+                // position: relative;
+
+                #navbar_for_pc {
+                    display: none;
+                }
+
+                #navbar_for_mobile {
+                    display: block;
+                    text-align: center;
+
+                    li {
+                        i {
+                            margin: 5vw auto;
+                        }
+                    }
+                }
+
+                .header_content {
+                    margin: 0;
+                    padding: 0;
+                    top: 30%;
+                    width: 100%;
+                    text-align: center;
+
+                    img {
+                        display: none;
+                    }
+
+                    .header_text {
+                        position: static;
+                        width: 100%;
+                        padding: 1rem 0;
+                        margin: 0;
+
+                        .h1 {
+                            margin: 1rem auto;
+                            p {
+                                font-size: 3.5vw;
+                            }
+                        }
+                    }
+                }
+            }
+            #main {
+                top: 60vw;
+
+                #content1 {
+                    padding: 2rem 0 1rem 0;
+
+                    .flex_row {
+                        .left {
+                            img {
+                                margin-left: -4rem;
+                            }
+                        }
+                        .right {
+                            margin: 1rem 0;
+                            .name {
+                                text-align: center;
+                            }
+                            table {
+                                width: 85%;
+                                margin: auto;
+
+                                tr {
+                                    td {
+                                        padding: 0.5rem 0;
+                                    }
+                                }
+                            }
+                            .flex_row {
+                                width: 80%;
+                                margin: auto;
+
+                                .traits {
+                                    flex: 0 1 30%;
+                                }
+                            }
+                        }
+                    }
+                }
+                #content2 {
+                    // margin-top: 40vh;
+                    width: 100%;
+                    flex-direction: column;
+
+                    .left {
+                        width: 100%;
+
+                        .c2_title {
+                            margin: 10vw auto;
+                        }
+                    }
+                    .right {
+                        margin-top: 10vh;
+                        width: 100%;
+                    }
+                }
+                #content3 {
+                    .flex_row {
+                        .works {
+                            flex: 1 1 100%;
+                            padding: 0.75rem;
+                            margin: 2rem 3.5rem;
+                        }
+                        .work_hide {
+                            .clickoff {
+                                margin: 0;
+                            }
+
+                            p {
+                                margin: 1rem;
+
+                                &:nth-child(2) {
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                #content4 {
+                    .c4_works {
+                        flex-direction: column;
+                        padding: 2rem 0;
+
+                        .c4_text {
+                            margin: 1rem;
+                        }
+
+                        .flex_col{
+                            flex: 1 1 80%;
+                            margin: 5rem 0;
+
+                            img{
+                                width: 60%;
+                            }
+                        }
+                    }
+                }
+                #content5 {
+                    margin: 0;
+                    margin-top: 4rem;
+                    height: 30rem;
+                    font-size: 14px;
+                    line-height: 2.5rem;
+                    background-color: rgb(25, 20, 56);
+                    background-size: 200%;
+
+                    .bgc {
+                        p {
+                            margin-left: 45%;
+
+                            &:first-child {
+                                padding-top: 7rem;
+                            }
+                        }
+                    }
+                }
+                #footer{
+                    height: 4.5rem;
+                    line-height: 4.5rem;
+                }
+            }
+        }
+    }
+}
+//RWD 400 down *****************************************************
+@media screen and (max-width: 400px) {
+    html{
+        body{
+            #main{
+                top: 110vw;
+            }
+        }
+    }
+}
+//     #header {
+//         ul {
+//             li {
+//                 display: none;
+//             }
+//         }
+//     }
+//     #main {
+//         #content1 {
+//             .title {
+//                 margin-top: 3rem;
+//             }
+//             .flex_row {
+//                 .left {
+//                     img {
+//                         margin-left: -3rem;
+//                         margin-bottom: -1rem;
+//                     }
+//                 }
+//                 .right {
+//                     display: flex;
+//                     flex-direction: column;
+
+//                     .name {
+//                         text-align: center;
+//                     }
+//                     table {
+//                         margin: 1rem 1rem;
+//                         width: 100%;
+//                         font-size: 0.8rem;
+
+//                         tr {
+//                             td:nth-child(1) {
+//                                 display: none;
+//                             }
+//                             td:nth-child(2)::before {
+//                                 content: "・ ";
+//                             }
+//                         }
+//                     }
+//                     .flex_row {
+//                         text-align: center;
+
+//                         .traits {
+//                             flex: 0 1 30%;
+//                             margin: 0.5rem auto;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+
+//         #content2 {
+//             .left {
+//                 p {
+//                     font-size: 2rem;
+//                 }
+//                 .flex_row {
+//                     width: 90%;
+
+//                     .skill {
+//                         margin: auto;
+//                         width: 7.5rem;
+//                         height: 7.5rem;
+//                         line-height: 7.5rem;
+//                         margin: 0.5rem 1rem;
+//                     }
+//                 }
+//             }
+//             .right {
+//                 p {
+//                     font-size: 2rem;
+//                     margin-left: 0;
+//                 }
+//                 .flex_row {
+//                     width: 90%;
+
+//                     .license {
+//                         margin: auto;
+//                         width: 7.5rem;
+//                         height: 5.5rem;
+//                         font-size: 1rem;
+//                         letter-spacing: 2px;
+//                         line-height: 2rem;
+//                         margin: 0.5rem 1rem;
+//                         padding-top: 2rem;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
