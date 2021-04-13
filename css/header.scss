@@ -1,113 +1,159 @@
 @import "palette";
 
 #header {
-    position: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vw;
+  font-weight: 300;
+  letter-spacing: 2px;
+  background-color: $thcolor1;
+
+  // top_navbar ********************************
+  #navbar_for_pc {
+    z-index: 10;
+    margin: 2vw 0;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      justify-content: space-around;
+
+      li {
+        list-style: none;
+        // margin-top: 1rem;
+
+        a {
+          color: $textcolor;
+          text-decoration: none;
+
+          &:hover {
+            padding-bottom: 3px;
+            border-bottom: 2px solid $thcolor2_light;
+          }
+        }
+      }
+    }
+  }
+
+  #navbar_for_mobile {
+    display: none;
+
+    /* Style the navigation menu */
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 50vw;
-    font-weight: 300;
-    letter-spacing: 2px;
-    background-color: $thcolor1;
 
-    // top_navbar ********************************
-    #navbar_for_pc {
-        z-index: 10;
-        margin: 2vw 0;
-
-        ul {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-            justify-content: space-around;
-
-            li {
-                list-style: none;
-                // margin-top: 1rem;
-
-                a {
-                    color: $textcolor;
-                    text-decoration: none;
-
-                    &:hover {
-                        padding-bottom: 3px;
-                        border-bottom: 2px solid $thcolor2_light;
-                    }
-                }
-            }
-        }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    #myLinks {
+      display: none;
     }
-    #navbar_for_mobile {
+
+    /* Style navigation menu links */
+    a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+
+      /* Style the hamburger menu */
+      &.icon {
+        background: black;
+        display: block;
         position: absolute;
+        right: 0;
         top: 0;
-        margin: 0;
-        padding: 0;
-        display: none;
-        width: 100%;
-        height: 30%;
-        background-color: $thcolor1;
+      }
 
-        ul {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            // margin: 0;
+      /* Add a grey background color on mouse-over */
+      &:hover {
+        cursor: pointer;
+      }
 
-            li {
-                list-style: none;
+    }
+    
+    /* Style the active link (or home/logo) */
+    .active {
+      background-color: $thcolor1;
+      color: white;
+    }
+    
 
-                a {
-                    display: block;
-                    background-color: none;
-                    border: none;
-                    i {
-                        color: $textcolor;
-                        font-size: 5vw;
-                    }
-                }
-            }
-        }
+
+    // position: absolute;
+    // top: 0;
+    // margin: 0;
+    // padding: 0;
+    // display: none;
+    // width: 100%;
+    // height: 30%;
+    // background-color: $thcolor1;
+
+    // ul {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     justify-content: space-around;
+    //     // margin: 0;
+
+    //     li {
+    //         list-style: none;
+
+    //         a {
+    //             display: block;
+    //             background-color: none;
+    //             border: none;
+    //             i {
+    //                 color: $textcolor;
+    //                 font-size: 5vw;
+    //             }
+    //         }
+    //     }
+    // }
+  }
+
+  // header content ********************************
+  .header_content {
+    position: absolute;
+    left: 0;
+    margin-top: 1rem;
+
+    img {
+      width: 60%;
     }
 
-    // header content ********************************
-    .header_content {
-        position: absolute;
-        left: 0;
-        margin-top: 1rem;
+    .header_text {
+      position: absolute;
+      top: 1vw;
+      left: 45vw;
+      width: 55%;
+      background-color: rgba($color: #333, $alpha: 0.9);
 
-        img {
-            width: 60%;
+      .h1 {
+        margin: 3%;
+        // margin: auto;
+        font-weight: 700;
+        letter-spacing: 6px;
+        font-style: italic;
+        color: #fff;
+        z-index: 1;
+
+        p {
+          font-size: 2.5rem;
+          margin: 1vw;
+
+          span {
+            font-size: 4.5rem;
+            color: rgb(237, 247, 177);
+          }
         }
-
-        .header_text {
-            position: absolute;
-            top: 1vw;
-            left: 45vw;
-            width: 55%;
-            background-color: rgba($color: #333, $alpha: 0.9);
-
-            .h1 {
-                margin: 3%;
-                // margin: auto;
-                font-weight: 700;
-                letter-spacing: 6px;
-                font-style: italic;
-                color: #fff;
-                z-index: 1;
-
-                p {
-                    font-size: 2.5rem;
-                    margin: 1vw;
-
-                    span {
-                        font-size: 4.5rem;
-                        color: rgb(237, 247, 177);
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }

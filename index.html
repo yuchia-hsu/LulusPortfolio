@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,7 @@
 
     <!-- css -->
     <!-- <link rel="stylesheet" href="css/cssnormalize.css"> -->
-    <!-- <link rel="stylesheet" href="css/cssreset.css"> -->
+    <link rel="stylesheet" href="css/cssreset.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/rwd.css">
     <link rel="stylesheet" href="css/header.css">
@@ -50,9 +51,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <a id="top"></a>
     <section id="header">
+
         <div id="navbar_for_pc">
             <ul>
                 <li><a href="#c1">個人簡介</a></li>
@@ -62,11 +64,25 @@
                 <li><a href="#c5">聯絡方式</a></li>
             </ul>
         </div>
+
         <div id="navbar_for_mobile">
-            <ul>
-                <li><a><i class="fas fa-cookie"></i></a></li>
-            </ul>
+            <!-- Top Navigation Menu -->
+                <a href="#header" class="active">Lulu's Portfolio</a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="#c1">個人簡介</a>
+                    <a href="#c2">技能證照</a>
+                    <a href="#c3">網頁作品總覽</a>
+                    <a href="#c4">其他作品</a>
+                    <a href="#c5">聯絡方式</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fas fa-cookie"></i>
+                </a>
         </div>
+
+
         <div class="header_content">
             <img src="images/bg2.jpg" class="pic1 wow animate__fadeIn">
             <div class="header_text wow animate__fadeInLeft">
@@ -91,7 +107,7 @@
             <p><a href="#c3">網頁作品</a></p>
             <p><a href="#c4">其他作品</a></p>
             <p><a href="#c5">聯絡方式</a></p>
-            <p><a href="#top">GO TOP</a></p>
+            <p><a href="#header">GO TOP</a></p>
         </div>
 
         <!-- 個人簡介 -->
@@ -414,7 +430,7 @@
                 </div>
 
 
-                
+
 
                 <!-- work5 show -->
                 <!-- <div class="works">
@@ -497,116 +513,117 @@
                     </p>
                 </div>
             </div> -->
-        </div>
-
-
-        <!-- 其他作品 -->
-        <a id="c4"></a>
-        <div id="content4">
-            <div class="c4_title wow animate__swing">其他作品</div>
-            <div class="flex_col">
-
-                <!-- work1 show -->
-                <div class="c4_works">
-                    <div class="c4_img">
-                        <img src="images/work7-3.PNG" alt="">
-                    </div>
-                    <div class="c4_text">
-                        <div class="title">日本大阪工業大學留學期間 - 產品設計專題作品</div>
-                        <!-- <img src="images/work1.PNG" alt=""> -->
-                        <p>《 組裝式懷舊零食BOX 》</p>
-                        <p> ★ 外盒可組裝成似日式路邊攤的外型，再將日本懷舊零食陳列其中，<br>便能藉此欣賞懷舊零食獨有的童趣包裝！</p>
-                        <p>1) 獨立進行產品製作方向及細節發想<br>
-                            2) 與日本同學討論如何將產品貼近日本人生活，使其產生共鳴<br>
-                            3) 思考如何將實用性、美觀、簡易，與環保等四項特點做平衡<br>
-                            4) 與日本同學共同將設計具現化，並站在使用者角度做體驗及修改</p>
-                    </div>
-                </div>
-
-                <!-- work2 show -->
-                <div class="c4_works">
-                    <div class="c4_img">
-                        <img src="images/work8-1.jpeg" alt="">
-                    </div>
-                    <div class="c4_text">
-                        <div class="title">台北科大文化事業發展系 - 畢業專題</div>
-                        <!-- <img src="images/work1.PNG" alt=""> -->
-                        <p>《 台灣1950-1960年代的民居建築 - 以拼圖式紙板袖珍屋呈現 》</p>
-                        <p>1) 與組員討論專題研究內容，及產出作品方向<br>
-                            2) 鎖定研究目標並透過網路、書籍、口訪查找歷史資料<br>
-                            3) 以水彩手繪建築外觀，將其印在貼紙，再黏貼到相對應之拼圖上<br>
-                            4) 以手繪之目標建築圖樣，製作包裝及周邊小物</p>
-                        
-                    </div>
-                </div>
-
-                <!-- work3 show -->
-                <div class="c4_works">
-                    <div class="c4_img">
-                        <img src="images/work9-1.PNG" style="width: 90%;">
-                    </div>
-                    <div class="c4_text">
-                        <div class="title">台北科大文化事業發展系 - 專題製作</div>
-                        <!-- <img src="images/work1.PNG" alt=""> -->
-                        <p>《 台北市南門市場推廣計畫 》</p>
-                        <p>1) 與組員討論專題研究內容，及產出作品方向<br>
-                            2) 鎖定研究目標並透過網路、書籍、街訪查找歷史資料<br>
-                            3) 以水彩手繪推廣小冊子，並獨力完成排版、編輯內容，及繪製的工作</p>
-                    </div>
-                </div>
-
-                <!-- work4 show -->
-                <div class="c4_works">
-                    <div class="flex_col">
-                        <div class="c4_img">
-                            <img src="images/work13.PNG">
-                        </div>
-                        <div class="c4_text_w30">
-                            <p>在職期間為前公司設計之展覽用傳單<br>( 要求將原9頁的技術內容濃縮成一張A4 )</p>
-                        </div>
-                    </div>
-                    <div class="flex_col">
-                        <div class="c4_img">
-                            <img src="images/work12.PNG">
-                        </div>
-                        <div class="c4_text_w30">
-                            <p>在職期間為前公司設計之LOGO <br> ( 老闆最終決定款 )</p>
-                        </div>
-                    </div>
-                    <div class="flex_col">
-                        <div class="c4_img">
-                            <img src="images/work11-1.jpeg" style="width: 50%;">
-                        </div>
-                        <div class="c4_text_w30">
-                            <p>文化事業發展系 x 光電工程系 迎新LOGO設計</p>
-                        </div>
-                    </div>
-
-                </div>
-
-
             </div>
-        </div>
 
 
-        <!-- 聯絡方式 -->
-        <a id="c5"></a>
-        <div class="c5_title wow animate__swing">聯絡我 !!</div>
-        <div id="content5">
-            <div class="bgc">
-                <p>TEL：0913-401-366</p>
-                <p>E-mail：chizumi111203@gmail.com</p>
-                <p>電話聯絡時間：09:00 - 22:00</p>
-                <p>可上班日：隨時</p>
-                <br>
-                <p><a href="https://pda.104.com.tw/profile/share/6NtvyFaqAFcMaL4WGZmA2H47Kvtv7OEk" target="_blank">回到我的104履歷</a></p>
+            <!-- 其他作品 -->
+            <a id="c4"></a>
+            <div id="content4">
+                <div class="c4_title wow animate__swing">其他作品</div>
+                <div class="flex_col">
+
+                    <!-- work1 show -->
+                    <div class="c4_works">
+                        <div class="c4_img">
+                            <img src="images/work7-3.PNG" alt="">
+                        </div>
+                        <div class="c4_text">
+                            <div class="title">日本大阪工業大學留學期間 - 產品設計專題作品</div>
+                            <!-- <img src="images/work1.PNG" alt=""> -->
+                            <p>《 組裝式懷舊零食BOX 》</p>
+                            <p> ★ 外盒可組裝成似日式路邊攤的外型，再將日本懷舊零食陳列其中，<br>便能藉此欣賞懷舊零食獨有的童趣包裝！</p>
+                            <p>1) 獨立進行產品製作方向及細節發想<br>
+                                2) 與日本同學討論如何將產品貼近日本人生活，使其產生共鳴<br>
+                                3) 思考如何將實用性、美觀、簡易，與環保等四項特點做平衡<br>
+                                4) 與日本同學共同將設計具現化，並站在使用者角度做體驗及修改</p>
+                        </div>
+                    </div>
+
+                    <!-- work2 show -->
+                    <div class="c4_works">
+                        <div class="c4_img">
+                            <img src="images/work8-1.jpeg" alt="">
+                        </div>
+                        <div class="c4_text">
+                            <div class="title">台北科大文化事業發展系 - 畢業專題</div>
+                            <!-- <img src="images/work1.PNG" alt=""> -->
+                            <p>《 台灣1950-1960年代的民居建築 - 以拼圖式紙板袖珍屋呈現 》</p>
+                            <p>1) 與組員討論專題研究內容，及產出作品方向<br>
+                                2) 鎖定研究目標並透過網路、書籍、口訪查找歷史資料<br>
+                                3) 以水彩手繪建築外觀，將其印在貼紙，再黏貼到相對應之拼圖上<br>
+                                4) 以手繪之目標建築圖樣，製作包裝及周邊小物</p>
+
+                        </div>
+                    </div>
+
+                    <!-- work3 show -->
+                    <div class="c4_works">
+                        <div class="c4_img">
+                            <img src="images/work9-1.PNG" style="width: 90%;">
+                        </div>
+                        <div class="c4_text">
+                            <div class="title">台北科大文化事業發展系 - 專題製作</div>
+                            <!-- <img src="images/work1.PNG" alt=""> -->
+                            <p>《 台北市南門市場推廣計畫 》</p>
+                            <p>1) 與組員討論專題研究內容，及產出作品方向<br>
+                                2) 鎖定研究目標並透過網路、書籍、街訪查找歷史資料<br>
+                                3) 以水彩手繪推廣小冊子，並獨力完成排版、編輯內容，及繪製的工作</p>
+                        </div>
+                    </div>
+
+                    <!-- work4 show -->
+                    <div class="c4_works">
+                        <div class="flex_col">
+                            <div class="c4_img">
+                                <img src="images/work13.PNG">
+                            </div>
+                            <div class="c4_text_w30">
+                                <p>在職期間為前公司設計之展覽用傳單<br>( 要求將原9頁的技術內容濃縮成一張A4 )</p>
+                            </div>
+                        </div>
+                        <div class="flex_col">
+                            <div class="c4_img">
+                                <img src="images/work12.PNG">
+                            </div>
+                            <div class="c4_text_w30">
+                                <p>在職期間為前公司設計之LOGO <br> ( 老闆最終決定款 )</p>
+                            </div>
+                        </div>
+                        <div class="flex_col">
+                            <div class="c4_img">
+                                <img src="images/work11-1.jpeg" style="width: 50%;">
+                            </div>
+                            <div class="c4_text_w30">
+                                <p>文化事業發展系 x 光電工程系 迎新LOGO設計</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
             </div>
-        </div>
 
 
-        <div id="footer">
-            <p> 2021 © Portfolio made by Lulu Hsu.</p>
-        </div>
+            <!-- 聯絡方式 -->
+            <a id="c5"></a>
+            <div class="c5_title wow animate__swing">聯絡我 !!</div>
+            <div id="content5">
+                <div class="bgc">
+                    <p>TEL：0913-401-366</p>
+                    <p>E-mail：chizumi111203@gmail.com</p>
+                    <p>電話聯絡時間：09:00 - 22:00</p>
+                    <p>可上班日：隨時</p>
+                    <br>
+                    <p><a href="https://pda.104.com.tw/profile/share/6NtvyFaqAFcMaL4WGZmA2H47Kvtv7OEk"
+                            target="_blank">回到我的104履歷</a></p>
+                </div>
+            </div>
+
+
+            <div id="footer">
+                <p> 2021 © Portfolio made by Lulu Hsu.</p>
+            </div>
     </section>
 
 

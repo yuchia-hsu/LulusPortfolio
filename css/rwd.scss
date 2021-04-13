@@ -74,6 +74,8 @@
     }
 }
 
+
+
 // RWD 789-401 *****************************************************
 @media screen and (max-width: 789px) {
     html {
@@ -99,6 +101,7 @@
                 }
 
                 .header_content {
+                    position: static;
                     margin: 0;
                     padding: 0;
                     top: 30%;
@@ -247,6 +250,9 @@
         }
     }
 }
+
+
+
 //RWD 400 down *****************************************************
 @media screen and (max-width: 400px) {
     html{
@@ -257,95 +263,3 @@
         }
     }
 }
-//     #header {
-//         ul {
-//             li {
-//                 display: none;
-//             }
-//         }
-//     }
-//     #main {
-//         #content1 {
-//             .title {
-//                 margin-top: 3rem;
-//             }
-//             .flex_row {
-//                 .left {
-//                     img {
-//                         margin-left: -3rem;
-//                         margin-bottom: -1rem;
-//                     }
-//                 }
-//                 .right {
-//                     display: flex;
-//                     flex-direction: column;
-
-//                     .name {
-//                         text-align: center;
-//                     }
-//                     table {
-//                         margin: 1rem 1rem;
-//                         width: 100%;
-//                         font-size: 0.8rem;
-
-//                         tr {
-//                             td:nth-child(1) {
-//                                 display: none;
-//                             }
-//                             td:nth-child(2)::before {
-//                                 content: "・ ";
-//                             }
-//                         }
-//                     }
-//                     .flex_row {
-//                         text-align: center;
-
-//                         .traits {
-//                             flex: 0 1 30%;
-//                             margin: 0.5rem auto;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-
-//         #content2 {
-//             .left {
-//                 p {
-//                     font-size: 2rem;
-//                 }
-//                 .flex_row {
-//                     width: 90%;
-
-//                     .skill {
-//                         margin: auto;
-//                         width: 7.5rem;
-//                         height: 7.5rem;
-//                         line-height: 7.5rem;
-//                         margin: 0.5rem 1rem;
-//                     }
-//                 }
-//             }
-//             .right {
-//                 p {
-//                     font-size: 2rem;
-//                     margin-left: 0;
-//                 }
-//                 .flex_row {
-//                     width: 90%;
-
-//                     .license {
-//                         margin: auto;
-//                         width: 7.5rem;
-//                         height: 5.5rem;
-//                         font-size: 1rem;
-//                         letter-spacing: 2px;
-//                         line-height: 2rem;
-//                         margin: 0.5rem 1rem;
-//                         padding-top: 2rem;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }

@@ -1,12 +1,3 @@
-// wow animate
-
-.animate__slideInUp{
-    // animation-delay: 0.5s;
-}
-.animate__fadeIn{
-    // animation-delay: 0.5s;
-}
-
 @-webkit-keyframes appear_90 {
   from {
     width: 0%;
