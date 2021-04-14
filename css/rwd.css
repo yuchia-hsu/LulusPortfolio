@@ -3,11 +3,11 @@
     font-size: 14px;
   }
   html body #header .header_content img {
-    width: 60%;
+    width: 55%;
   }
   html body #header .header_content .header_text {
     position: absolute;
-    top: 1vw;
+    top: 8vw;
     width: 55%;
   }
   html body #header .header_content .header_text .h1 {
