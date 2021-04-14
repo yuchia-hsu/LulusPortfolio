@@ -9,45 +9,74 @@ function myFunction() {
   }
 }
 
+
 //******** side navbar
 $(function () {
   $(window).scroll(function () {
     let scrollVal = $(this).scrollTop(); //頁面滾動的高度
     let windowVal = $(window).height(); //瀏覽器窗口高度
-    let windowWid = $(window).width(); //瀏覽器窗口高度
-    if (scrollVal > windowVal * 0.6 && windowWid > 790) {
-      //   document.getElementById("content2").innerText = "123465";
+    let windowWid = $(window).width(); //瀏覽器窗口寬度
+
+    // 若頁面滾動高度大於70vh && 瀏覽器寬度大於790(RWD) 
+    if (scrollVal > windowVal * 0.7 && windowWid > 790) {
+
       document.getElementById("side_navbar").style.display = "block";
+    
     } else {
+
       document.getElementById("side_navbar").style.display = "none";
+    
     }
-    // if (scrollVal>500 && scrollVal<1000) {
-    //     document.getElementsByClassName("n1").style.backgroundColor = "#a18d7c" ;
-    // }
   });
 });
+
+
+
+
+
+//***** */ class - add
+function addClass($target = "", $classname = "") {
+  let target = document.querySelector($target);
+  target.classList.add($classname);
+}
+
+
+//***** */ class - remove
+function removeClass($target = "", $classname = "") {
+  let target = document.querySelector($target);
+  target.classList.remove($classname);
+}
+
+
+
 
 //********* works light box - open
 function openWin($target_id) {
   let scrollVal = $(this).scrollTop(); //頁面滾動的高度
-  let winHei = $(document).height();
-  let screenHei = $(window).height();
-  console.log(scrollVal);
-  console.log(screenHei);
-  console.log(winHei);
+  let winHei = $(document).height(); //文件高度
+  let screenHei = $(window).height(); //瀏覽器高度
+  // console.log(scrollVal);
+  // console.log(screenHei);
+  // console.log(winHei);
 
+  // 作用：防止作品視窗在document以下做開啟，始之維持在document原始高度中開啟
   if ($(document).height() > scrollVal + screenHei) {
+
     addClass(".work_hide", "fixWindow");
     document.getElementById($target_id).style.top =
       scrollVal - screenHei + screenHei * 0.1 * 0.2 + "px";
     document.getElementById($target_id).style.display = "block";
+  
   } else {
+
     addClass(".work_hide", "fixWindow");
     document.getElementById($target_id).style.top =
       scrollVal - screenHei + "px";
     document.getElementById($target_id).style.display = "block";
+  
   }
 }
+
 
 //***** */ works light box - close
 function closeWin($target_id) {
@@ -56,14 +85,4 @@ function closeWin($target_id) {
   removeClass(".work_hide", "fixWindow");
 }
 
-//***** */ class - add
-function addClass($target = "", $classname = "") {
-  let target = document.querySelector($target);
-  target.classList.add($classname);
-}
 
-//***** */ class - remove
-function removeClass($target = "", $classname = "") {
-  let target = document.querySelector($target);
-  target.classList.remove($classname);
-}

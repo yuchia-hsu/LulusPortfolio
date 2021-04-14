@@ -97,9 +97,6 @@
   html body #header .header_content .header_text .h1 p {
     font-size: 3.5vw;
   }
-  html body #main {
-    top: 60vw;
-  }
   html body #main #content1 {
     padding: 2rem 0 1rem 0;
   }
@@ -203,7 +200,7 @@
 
 @media screen and (max-width: 400px) {
   html body #main {
-    top: 110vw;
+    top: 0vw;
   }
 }
 /*# sourceMappingURL=rwd.css.map */

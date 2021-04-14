@@ -1,11 +1,11 @@
 @import "palette";
 
 #header {
-  position: absolute;
-  top: 0;
-  left: 0;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
   width: 100%;
-  height: 50vw;
+  height: 45vw;
   font-weight: 300;
   letter-spacing: 2px;
   background-color: $thcolor1;
@@ -13,26 +13,24 @@
   // top_navbar ********************************
   #navbar_for_pc {
     z-index: 10;
-    margin: 2vw 0;
+    padding: 2.5vw 0;
 
     ul {
+      margin: 0;
+      padding: 0;
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin: 0;
-      padding: 0;
       justify-content: space-around;
 
       li {
         list-style: none;
-        // margin-top: 1rem;
 
         a {
           color: $textcolor;
-          text-decoration: none;
 
           &:hover {
-            padding-bottom: 3px;
+            padding-bottom: 5px;
             border-bottom: 2px solid $thcolor2_light;
           }
         }
@@ -49,12 +47,12 @@
     position: sticky;
     top: 0;
 
-    /* Hide the links inside the navigation menu (except for logo/home) */
+    /* link list */
     #myLinks {
       display: none;
     }
 
-    /* Style navigation menu links */
+    /* link list content */
     a {
       color: white;
       padding: 14px 16px;
@@ -71,86 +69,49 @@
         top: 0;
       }
 
-      /* Add a grey background color on mouse-over */
       &:hover {
         cursor: pointer;
       }
 
     }
     
-    /* Style the active link (or home/logo) */
+    /* Style the logo area */
     .active {
       background-color: $thcolor1;
       color: white;
     }
-    
-
-
-    // position: absolute;
-    // top: 0;
-    // margin: 0;
-    // padding: 0;
-    // display: none;
-    // width: 100%;
-    // height: 30%;
-    // background-color: $thcolor1;
-
-    // ul {
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-    //     justify-content: space-around;
-    //     // margin: 0;
-
-    //     li {
-    //         list-style: none;
-
-    //         a {
-    //             display: block;
-    //             background-color: none;
-    //             border: none;
-    //             i {
-    //                 color: $textcolor;
-    //                 font-size: 5vw;
-    //             }
-    //         }
-    //     }
-    // }
   }
 
   // header content ********************************
   .header_content {
-    position: absolute;
-    left: 0;
-    margin-top: 1rem;
+    float: left;
 
     img {
-      width: 60%;
+      width: 55%;
     }
 
     .header_text {
       position: absolute;
-      top: 1vw;
+      top: 7vw;
       left: 45vw;
       width: 55%;
       background-color: rgba($color: #333, $alpha: 0.9);
 
       .h1 {
-        margin: 3%;
-        // margin: auto;
+        margin: 3vw 4vw;
         font-weight: 700;
         letter-spacing: 6px;
         font-style: italic;
         color: #fff;
-        z-index: 1;
-
+        
         p {
           font-size: 2.5rem;
-          margin: 1vw;
-
+          margin: 1vw 0;
+          
           span {
             font-size: 4.5rem;
             color: rgb(237, 247, 177);
+            text-shadow: 3px 3px 5px rgb(43, 43, 43);
           }
         }
       }

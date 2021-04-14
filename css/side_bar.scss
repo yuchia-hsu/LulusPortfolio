@@ -1,10 +1,6 @@
 @import "palette";
 
 #main {
-    position: relative;
-    top: 100vh;
-    left: 0;
-
     // side navbar ********************************
     #side_navbar {
         position: fixed;
@@ -16,15 +12,17 @@
         display: none;
 
         p {
-            width: 6rem;
+            width: 4.5rem;
             margin: 0.8rem 0;
             padding: 0.5rem 0.5rem 0.5rem 0;
             background-color: $thcolor1_light;
             border-radius: 0 10px 10px 0;
+            font-size: 0.8rem;
 
             &:hover {
                 background-color: $thcolor1;
                 padding-left: 1.5rem;
+                font-size: 1rem;
             }
 
             a {

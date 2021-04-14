@@ -57,24 +57,24 @@
 
         <div id="navbar_for_pc">
             <ul>
-                <li><a href="#c1">個人簡介</a></li>
-                <li><a href="#c2">技能證照</a></li>
-                <li><a href="#c3">網頁作品總覽</a></li>
-                <li><a href="#c4">其他作品</a></li>
-                <li><a href="#c5">聯絡方式</a></li>
+                <li><a href="#content1">個人簡介</a></li>
+                <li><a href="#content2">技能證照</a></li>
+                <li><a href="#content3">網頁作品總覽</a></li>
+                <li><a href="#content4">其他作品</a></li>
+                <li><a href="#content5">聯絡方式</a></li>
             </ul>
         </div>
 
         <div id="navbar_for_mobile">
             <!-- Top Navigation Menu -->
                 <a href="#header" class="active">Lulu's Portfolio</a>
-                <!-- Navigation links (hidden by default) -->
+                <!-- Navigation links -->
                 <div id="myLinks">
-                    <a href="#c1">個人簡介</a>
-                    <a href="#c2">技能證照</a>
-                    <a href="#c3">網頁作品總覽</a>
-                    <a href="#c4">其他作品</a>
-                    <a href="#c5">聯絡方式</a>
+                    <a href="#content1">個人簡介</a>
+                    <a href="#content2">技能證照</a>
+                    <a href="#content3">網頁作品總覽</a>
+                    <a href="#content4">其他作品</a>
+                    <a href="#content5">聯絡方式</a>
                 </div>
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -88,7 +88,7 @@
             <div class="header_text wow animate__fadeInLeft">
                 <div class="h1">
                     <p><span>Hello world！</span></p>
-                    <p><span>I'm Lulu！</span></p>
+                    <p><span>I'm Lulu！</span></p><br>
                     <p>R you ready for</p>
                     <p>Enjoying a unique tour </p>
                     <p>with ME？</p>
@@ -102,22 +102,23 @@
 
         <!-- navbar -->
         <div id="side_navbar">
-            <p><a href="#c1">個人簡介</a></p>
-            <p><a href="#c2">技能證照</a></p>
-            <p><a href="#c3">網頁作品</a></p>
-            <p><a href="#c4">其他作品</a></p>
-            <p><a href="#c5">聯絡方式</a></p>
+            <p><a href="#content1">個人簡介</a></p>
+            <p><a href="#content2">技能證照</a></p>
+            <p><a href="#content3">網頁作品</a></p>
+            <p><a href="#content4">其他作品</a></p>
+            <p><a href="#content5">聯絡方式</a></p>
             <p><a href="#header">GO TOP</a></p>
         </div>
 
         <!-- 個人簡介 -->
-        <a id="c1"></a>
         <div id="content1">
             <div class="c1_title">個人簡介</div>
             <div class="flex_row wow animate__fadeInLeft">
+
                 <div class="left">
                     <img src="images/pic3.png" alt="">
                 </div>
+
                 <div class="right">
                     <table>
                         <tr>
@@ -153,12 +154,13 @@
                         <div class="traits"># 親和力佳</div>
                     </div>
                 </div>
+
             </div>
         </div>
 
         <!-- 技能證照 -->
-        <a id="c2"></a>
         <div id="content2">
+
             <div class="left">
                 <div class="c2_title">證照</div>
                 <div class="flex_row wow animate__fadeInUp">
@@ -244,13 +246,14 @@
                     <div class="license">產物保險業務員</div>
                 </div>
             </div>
+
         </div>
 
         <!-- 網頁作品總覽 -->
-        <a id="c3"></a>
         <div id="content3">
             <div class="c3_title wow animate__swing">網頁作品總覽</div>
             <div class="flex_row">
+
                 <!-- work1 show -->
                 <!-- bookstore -->
                 <div class="works">
@@ -330,6 +333,7 @@
                     <p class="clickoff">
                         再次點按此視窗即可關閉
                     </p>
+
                 </div>
 
 
@@ -369,6 +373,7 @@
                     <p class="clickoff">
                         再次點按此視窗即可關閉
                     </p>
+
                 </div>
 
 
@@ -428,96 +433,10 @@
                         再次點按此視窗即可關閉
                     </p>
                 </div>
-
-
-
-
-                <!-- work5 show -->
-                <!-- <div class="works">
-                    <button type="button" id="btnwork1" onclick="openWin('work5');">
-                        <div class="works_bg"></div>
-                    </button>
-                    <div class="title">JavasScript 小工具</div>
-                    <img src="images/work5.PNG" alt="">
-                    <p>課堂分組專題作品 - 南波灣書局 購物網站</p>
-                    <p>1) 商品內文PHP連結建立，由Mysql資料庫自動取出書籍資料並顯示<br>
-                        2) 建立加入購物車流程，及編輯購物車相關功能</p>
-                </div> -->
-
-                <!-- work5 hide -->
-                <!-- <div id="work5" class="work_hide" onclick="closeWin('work5');">
-                    <p class="clickoff">
-                        再次點按此視窗即可關閉
-                    </p>
-                    <p>課堂分組專題作品 - 南波灣書局 購物網站</p>
-                    <p>負責製作部分：</p>
-                    <p>1) 商品內文product.php連結建立，由Mysql資料庫自動取出書籍資料並顯示</p>
-                    <p>2) 建立加入購物車功能(使用Session及匯入資料庫兩種方式)</p>
-                    <p>3) 新增、編輯、刪除、更新購物車內容</p>
-                    <p>4) 建立結帳頁面，及感謝頁面</p><br>
-                    <p>《 單項商品顯示頁 》</p>
-                    <img src="images/work1-1.PNG" alt=""><br><br>
-                    <p>《 購物車頁面 - 無加入任何商品之狀態 》</p>
-                    <img src="images/work1-2.PNG" alt=""><br><br>
-                    <p>《 購物車頁面 - 已加入商品之狀態 》</p>
-                    <img src="images/work1-3.PNG" alt=""><br><br>
-                    <p>《 結帳頁面 - (左)訂單內容確認 (右)收件人資訊填寫 》</p>
-                    <img src="images/work1-4.PNG" alt=""><br><br>
-                    <p>《 感謝頁面 - 顯示訂單編號及訂購時間》</p>
-                    <img src="images/work1-5.PNG" alt=""><br><br>
-                    <p>《 訂單內容已寫入資料庫》</p>
-                    <img src="images/work1-6.PNG" alt=""><br><br>
-                    <p class="clickoff">
-                        再次點按此視窗即可關閉
-                    </p>
-                </div> -->
-
-
-                <!-- work6 show -->
-                <!-- <div class="works">
-                    <button type="button" id="btnwork1" onclick="openWin('work6');">
-                        <div class="works_bg"></div>
-                    </button>
-                    <div class="title">Vue.js 小工具</div>
-                    <img src="images/work1.PNG" alt="">
-                    <p>課堂分組專題作品 - 南波灣書局 購物網站</p>
-                    <p>1) 商品內文PHP連結建立，由Mysql資料庫自動取出書籍資料並顯示<br>
-                        2) 建立加入購物車流程，及編輯購物車相關功能</p>
-                </div> -->
-
-                <!-- work6 hide -->
-                <!-- <div id="work6" class="work_hide" onclick="closeWin('work6');">
-                    <p class="clickoff">
-                        再次點按此視窗即可關閉
-                    </p>
-                    <p>課堂分組專題作品 - 南波灣書局 購物網站</p>
-                    <p>負責製作部分：</p>
-                    <p>1) 商品內文product.php連結建立，由Mysql資料庫自動取出書籍資料並顯示</p>
-                    <p>2) 建立加入購物車功能(使用Session及匯入資料庫兩種方式)</p>
-                    <p>3) 新增、編輯、刪除、更新購物車內容</p>
-                    <p>4) 建立結帳頁面，及感謝頁面</p><br>
-                    <p>《 單項商品顯示頁 》</p>
-                    <img src="images/work1-1.PNG" alt=""><br><br>
-                    <p>《 購物車頁面 - 無加入任何商品之狀態 》</p>
-                    <img src="images/work1-2.PNG" alt=""><br><br>
-                    <p>《 購物車頁面 - 已加入商品之狀態 》</p>
-                    <img src="images/work1-3.PNG" alt=""><br><br>
-                    <p>《 結帳頁面 - (左)訂單內容確認 (右)收件人資訊填寫 》</p>
-                    <img src="images/work1-4.PNG" alt=""><br><br>
-                    <p>《 感謝頁面 - 顯示訂單編號及訂購時間》</p>
-                    <img src="images/work1-5.PNG" alt=""><br><br>
-                    <p>《 訂單內容已寫入資料庫》</p>
-                    <img src="images/work1-6.PNG" alt=""><br><br>
-                    <p class="clickoff">
-                        再次點按此視窗即可關閉
-                    </p>
-                </div>
-            </div> -->
             </div>
 
 
             <!-- 其他作品 -->
-            <a id="c4"></a>
             <div id="content4">
                 <div class="c4_title wow animate__swing">其他作品</div>
                 <div class="flex_col">
@@ -594,16 +513,13 @@
                                 <p>文化事業發展系 x 光電工程系 迎新LOGO設計</p>
                             </div>
                         </div>
-
                     </div>
-
 
                 </div>
             </div>
 
 
             <!-- 聯絡方式 -->
-            <a id="c5"></a>
             <div class="c5_title wow animate__swing">聯絡我 !!</div>
             <div id="content5">
                 <div class="bgc">
@@ -612,7 +528,7 @@
                     <p>電話聯絡時間：09:00 - 22:00</p>
                     <p>可上班日：隨時</p>
                     <br>
-                    <p><a href="https://pda.104.com.tw/profile/share/6NtvyFaqAFcMaL4WGZmA2H47Kvtv7OEk"
+                    <p><a href="https://pda.104.com.tw/profile/share/6NyorA2toBTjsl1azUKXaRXsCaR8JlmU"
                             target="_blank">回到我的104履歷</a></p>
                 </div>
             </div>
