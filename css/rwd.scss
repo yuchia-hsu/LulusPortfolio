@@ -83,7 +83,8 @@
         body {
             #header {
                 background-color: #fff;
-                // position: relative;
+                position: static;
+                height: 60vh;
 
                 #navbar_for_pc {
                     display: none;
@@ -104,8 +105,8 @@
                     position: static;
                     margin: 0;
                     padding: 0;
-                    top: 30%;
                     width: 100%;
+                    height: 80%;
                     text-align: center;
 
                     img {
@@ -115,7 +116,8 @@
                     .header_text {
                         position: static;
                         width: 100%;
-                        padding: 1rem 0;
+                        height: 100%;
+                        padding: 1.5rem 0;
                         margin: 0;
 
                         .h1 {
@@ -128,40 +130,16 @@
                 }
             }
             #main {
-                // top: 60vw;
+                position: static;
 
                 #content1 {
-                    padding: 2rem 0 1rem 0;
+                    margin: auto;
 
                     .flex_row {
-                        .left {
-                            img {
-                                margin-left: -4rem;
-                            }
-                        }
+
                         .right {
-                            margin: 1rem 0;
-                            .name {
-                                text-align: center;
-                            }
-                            table {
-                                width: 85%;
-                                margin: auto;
-
-                                tr {
-                                    td {
-                                        padding: 0.5rem 0;
-                                    }
-                                }
-                            }
-                            .flex_row {
-                                width: 80%;
-                                margin: auto;
-
-                                .traits {
-                                    flex: 0 1 30%;
-                                }
-                            }
+                            margin: 3rem 5vw;
+             
                         }
                     }
                 }
