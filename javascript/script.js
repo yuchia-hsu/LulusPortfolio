@@ -64,7 +64,8 @@ function openWin($target_id) {
 
     addClass(".work_hide", "fixWindow");
     document.getElementById($target_id).style.top =
-      scrollVal - screenHei + screenHei * 0.1 * 0.2 + "px";
+      scrollVal + screenHei * 0.03 + "px";
+      // scrollVal - screenHei + screenHei * 0.1 * 0.2 + "px";
     document.getElementById($target_id).style.display = "block";
   
   } else {
